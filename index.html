@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Film Finder</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Skranji&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+        <script defer src="helpers.js"></script>
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 id="appTitle">🍿Film Finder🍿</h1>
+        </header>
+        <form id="genreForm">
+            <label>Choose a genre:</label>
+            <select name="genres" id="genres">
+            </select>
+        </form>
+        <button id="playBtn">Let's Play</button>
+        <div id="movieInfo">
+            <div id="moviePoster"></div>
+            <div id="movieText"></div>
+        </div>
+        <div id="likeOrDislikeBtns" hidden>
+            <button id="likeBtn"><i class="fa-solid fa-thumbs-up"></i></button>
+            <button id="dislikeBtn"><i class="fa-solid fa-thumbs-down"></i></button>
+        </div>
+    </body>
+</html>
